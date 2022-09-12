@@ -1,0 +1,37 @@
+.bg-calculator{
+    background-color: rgb(164, 164, 164);
+}
+
+.bg-yellow{
+    background-color: rgb(214, 131, 30);
+}
+
+.calculator-screen{
+    font-weight: 700;
+    font-size: 5rem;
+    text-align: end;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.calculator-key{
+    padding: 1rem;
+}
+
+.calculator-key{
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+button{
+    border: 0;
+    display: block;
+    width: 100%;
+    color: #fff;
+}
+
+button:hover{
+    filter: brightness(1.2);
+}
