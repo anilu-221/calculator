@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <title>Calculator</title>
 </head>
 <body class="bg-dark text-white">
@@ -19,84 +19,87 @@
                     <!--Screen-->
                     <div class="row my-1">
                         <div class="col">
-                            <div class="rounded bg-dark calculator-screen">0</div>
+                            <div class="rounded bg-dark calculator-screen">
+                                <p class="fs-3 mt-2" id="displaySmall">0</p>
+                                <p id="displayMain">0</p>
+                            </div>
                         </div>
                     </div>
 
                     <!--Row 01-->
                     <div class="row my-1 g-2">
                         <div class="col-3">
-                            <button class="rounded calculator-key bg-primary">AC</button>
+                            <button class="rounded calculator-key bg-primary" value="AC">AC</button>
                         </div>
                         <div class="col-3">
-                            <button class="rounded calculator-key bg-secondary">+/-</button>
+                            <button class="rounded calculator-key bg-secondary" value="+/-">+/-</button>
                         </div>
                         <div class="col-3">
-                            <button class="rounded calculator-key bg-secondary">%</button>
+                            <button class="rounded calculator-key bg-secondary" value="%">%</button>
                         </div>
                         <div class="col-3">
-                            <button class="rounded calculator-key bg-secondary">/</button>
+                            <button class="rounded calculator-key bg-secondary" value="/">/</button>
                         </div>
                     </div>     
                     
                     <!--Row 02-->
                     <div class="row my-1 g-2">
                         <div class="col-3">
-                            <button class="rounded bg-dark calculator-key">7</button>
+                            <button class="rounded bg-dark calculator-key" value="7">7</button>
                         </div>
                         <div class="col-3">
-                            <button class="rounded bg-dark calculator-key">8</button>
+                            <button class="rounded bg-dark calculator-key" value="8">8</button>
                         </div>
                         <div class="col-3">
-                            <button class="rounded bg-dark calculator-key">9</button>
+                            <button class="rounded bg-dark calculator-key" value="9">9</button>
                         </div>
                         <div class="col-3">
-                            <button class="rounded calculator-key bg-secondary">*</button>
+                            <button class="rounded calculator-key bg-secondary" value="*">*</button>
                         </div>
                     </div>   
 
                     <!--Row 03-->
                     <div class="row my-1 g-2">
                         <div class="col-3">
-                            <button class="rounded bg-dark calculator-key">4</button>
+                            <button class="rounded bg-dark calculator-key" value="4">4</button>
                         </div>
                         <div class="col-3">
-                            <button class="rounded bg-dark calculator-key">5</button>
+                            <button class="rounded bg-dark calculator-key" value="5">5</button>
                         </div>
                         <div class="col-3">
-                            <button class="rounded bg-dark calculator-key">6</button>
+                            <button class="rounded bg-dark calculator-key" value="6">6</button>
                         </div>
                         <div class="col-3">
-                            <button class="rounded calculator-key bg-secondary">-</button>
+                            <button class="rounded calculator-key bg-secondary" value="-">-</button>
                         </div>
                     </div>   
 
                     <!--Row 04-->
                     <div class="row my-1 g-2">
                         <div class="col-3">
-                            <button class="rounded bg-dark calculator-key">1</button>
+                            <button class="rounded bg-dark calculator-key" value="1">1</button>
                         </div>
                         <div class="col-3">
-                            <button class="rounded bg-dark calculator-key">2</button>
+                            <button class="rounded bg-dark calculator-key" value="2">2</button>
                         </div>
                         <div class="col-3">
-                            <button class="rounded bg-dark calculator-key">3</button>
+                            <button class="rounded bg-dark calculator-key" value="3">3</button>
                         </div>
                         <div class="col-3">
-                            <button class="rounded calculator-key bg-secondary">+</button>
+                            <button class="rounded calculator-key bg-secondary" value="+">+</button>
                         </div>
                     </div>   
 
                     <!--Row 05-->
                     <div class="row my-1 g-2">
                         <div class="col-6">
-                            <button class="rounded bg-dark calculator-key">0</button>
+                            <button class="rounded bg-dark calculator-key" value="0">0</button>
                         </div>
                         <div class="col-3">
-                            <button class="rounded bg-dark calculator-key">.</button>
+                            <button class="rounded bg-dark calculator-key" value=".">.</button>
                         </div>
                         <div class="col-3">
-                            <button class="rounded calculator-key bg-yellow">=</button>
+                            <button class="rounded calculator-key bg-yellow" value="Enter">=</button>
                         </div>
                     </div>   
                 </div>
